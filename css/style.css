@@ -11,13 +11,46 @@ html, body {
   #logo { 
     float: right;
     position: absolute;
+    z-index: 7;
     width: 100px;
-    height: 125px;
+    height: 125px;    
   }
-  div.nav{
-    z-index: -12;
+
+  #rant {
+    height: 100%;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
   }
+
+  .rant-text {
+    position:relative;
+    color: white;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    }
+    
+  .rant-text h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    } 
+    
+  .rant-text h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  } 
   
+  .rant-text comment {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+
   .text-vertical-center {
     position:relative;
     color: white;
@@ -46,7 +79,7 @@ html, body {
     display: inline-block;
     margin: 3px;
     font-size: 32px;
-    background-color:#0080ff;
+    background-color:transparent;
   }
   
   button.btn-rant:hover {
