@@ -34,3 +34,10 @@ function requestCompliment() {
   }        
   );
   }
+
+  function submitRant(){
+    var text = $("#rant_text").val();
+    var jsonData = "{'rant': '" + text + "'}";
+    $.post( "http://localhost:3000/api/rants", { rant : text } );
+
+  }
