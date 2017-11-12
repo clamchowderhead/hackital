@@ -14,10 +14,43 @@ html, body {
     width: 100px;
     height: 125px;
   }
+
+  #rant {
+    height: 100%;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+  }
   div.nav{
     z-index: -12;
   }
-  
+  .rant-text {
+    position:relative;
+    color: white;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .rant-text h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  } 
+
+  .rant-text h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  } 
+
+  .rant-text comment {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
   .text-vertical-center {
     position:relative;
     color: white;
@@ -92,5 +125,4 @@ html, body {
   div.modal-content{
     color:black;
   }
-  
   
