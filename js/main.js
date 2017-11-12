@@ -8,12 +8,29 @@ function ran_col() { //function name
     list[1].style.background = color;
   }
 
-  function getRandomINt(min,max){
-    min = Math.cell(min);
+  function getRandomInt(min,max){
+    min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
   function requestRant() {
-    $.get()
+    $.get("http://localhost:3000/api/rants/",
+        function(data,status){
+          var rants = data;
+          var index = getRandomInt(0, rants['Rants'].length);
+          var output = rants['Rants'][index]['rant'];
+          $("#rant_desc").text(output);
+        }        
+  );
+}
+function requestCompliment() {
+  $.get("http://localhost:3000/api/compliments/",
+  function(data,status){
+    var rants = data;
+    var index = getRandomInt(0, rants['Compliments'].length);
+    var output = rants['Compliments'][index]['compliment'];
+    $("#compliment_desc").text(output);
+  }        
+  );
   }

@@ -4,13 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
-  <script src="https://code.jquery.com/jquery-latest.js"></script>
-=======
   <title>Wishing Well - Well Wishes</title>
 
->>>>>>> f2a20af1a50b1e77fbfff04d424a01be3dd40d83
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,6 +16,11 @@
   <link href="../css/style.css" rel="stylesheet">
 
 </head>
+<script type="text/javascript">
+$(document).ready(function(){
+  requestRant();
+})
+</script>
 <body>
 <body onload="return ran_col()">
   <!-- Header -->
@@ -33,10 +33,10 @@
     <header class="header" id="rant">
     <div class="rant-text">
       <h1>Rant #1</h1>
-      <h3>My teammates keep yelling at me.</h3>
+      <h3 id="rant_desc">My teammates keep yelling at me.</h3>
       </br>
       <hr>
-      <comment>feels bad ;-;</comment>
+      <comment>In Progress - User Input</comment>
     </div>
     
   </header>
