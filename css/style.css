@@ -30,14 +30,14 @@ html, body {
     display: table-cell;
     text-align: left;
     vertical-align: top;
-    }
+  }
     
   .rant-text h1 {
     font-size: 4.5em;
     font-weight: 700;
     margin: 0;
     padding: 0;
-    } 
+  } 
     
   .rant-text h3 {
     font-size: 2em;
@@ -50,7 +50,6 @@ html, body {
     margin: 0;
     padding: 0;
   }
-
   .text-vertical-center {
     position:relative;
     color: white;
@@ -125,5 +124,4 @@ html, body {
   div.modal-content{
     color:black;
   }
-  
   
