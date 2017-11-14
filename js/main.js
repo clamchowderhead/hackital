@@ -15,7 +15,7 @@ function ran_col() { //function name
   }
 
   function requestRant() {
-    $.get("http://localhost:3000/api/rants/",
+    $.get("http://54.167.102.0:3000/api/rants/",
         function(data,status){
           var rants = data;
           var index = getRandomInt(0, rants['Rants'].length);
@@ -25,7 +25,7 @@ function ran_col() { //function name
   );
 }
 function requestCompliment() {
-  $.get("http://localhost:3000/api/compliments/",
+  $.get("http://54.167.102.0:3000/api/compliments/",
   function(data,status){
     var rants = data;
     var index = getRandomInt(0, rants['Compliments'].length);
@@ -38,6 +38,6 @@ function requestCompliment() {
   function submitRant(){
     var text = $("#rant_text").val();
     var jsonData = "{'rant': '" + text + "'}";
-    $.post( "http://localhost:3000/api/rants", { rant : text } );
+    $.post( "http://54.167.102.0:3000/api/rants", { rant : text } );
 
   }
